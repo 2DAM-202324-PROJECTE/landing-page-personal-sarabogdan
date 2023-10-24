@@ -7,8 +7,7 @@ export default {
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),
-          preus: resolve(__dirname, 'preus/index.html'),
-          about: resolve(__dirname, 'preus/about.html'),
+          preus: resolve(__dirname, 'preus/index.html')
         },
       },
     },
