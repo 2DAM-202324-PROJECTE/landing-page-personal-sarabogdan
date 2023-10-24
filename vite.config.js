@@ -1,14 +1,12 @@
 import { resolve } from 'path'
-
-export default {
-    // config options
-    base: '/landing-page-personal-sarabogdan/',
+import { defineConfig } from 'vite'
+export default defineConfig({
     build: {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                preus: resolve(__dirname, 'preus/index.html')
+                index: resolve(__dirname, 'preus/index.html'),
             },
         },
     },
-}
+})
