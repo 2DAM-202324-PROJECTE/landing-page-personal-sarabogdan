@@ -6,6 +6,13 @@
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
+      }
+    </style>
   </head>
   <body>
   <script type="module" src="/main.js"></script> <!-- executar el main -->
@@ -29,9 +36,9 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Presentació</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Projectes</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contacte</a>
+          <a href="#projectes-section" class="scroll-behavior hover:animate-pulse text-sm font-semibold leading-6 text-gray-900">Projectes</a>
+          <a href="#preus-section" class="text-sm font-semibold leading-6 text-gray-900">Preus</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contacta'm</a>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
@@ -69,7 +76,7 @@
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
-      <div class="py-24 sm:py-32 lg:pb-40">
+      <div class="pt-32 pb-6">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl text-center">
             <h1 class="text-4xl font-bold tracking-tight text-purple-900 sm:text-4xl">Desenvolupadora de videojocs</h1>
@@ -79,14 +86,6 @@
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Què he fet?</a>
-            </div>
-            <div class="mt-16 flow-root sm:mt-24">
-              <div class="flex rounded-xl bg-gray-900/5 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl lg:p-4">
-                <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10 ml-8">
-                <img src="https://i.pinimg.com/564x/74/22/4a/74224ae7a72bd62adc3ca59e44bca298.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10">
-                <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10">
-                <img src="https://static.videezy.com/system/resources/thumbnails/000/051/342/original/Plexus-Space.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-8">
-              </div>
             </div>
           </div>
         </div>
@@ -98,20 +97,28 @@
   </div>
 <!-- ACABA la Hero Section -->
   <!-- PROJECTES -->
-  <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div id="projectes-section" class="bg-white">
+    <div class="mx-auto px-6 lg:px-40 mr-2 pt-16">
       <div class="mx-auto max-w-4xl text-center">
         <h1 class="text-base font-semibold text-gray-600">Projectes</h1>
       </div>
+      <div class="mt-16 flex justify-center mt-8">
+        <div class="flex rounded-xl bg-white/100 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl lg:p-4 gap-8 px-8 z-50">
+          <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10 ml-8">
+          <img src="https://i.pinimg.com/564x/74/22/4a/74224ae7a72bd62adc3ca59e44bca298.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10">
+          <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10">
+          <img src="https://static.videezy.com/system/resources/thumbnails/000/051/342/original/Plexus-Space.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-8">
+        </div>
+      </div>
     </div>
-  </div>
+  </div >
 <!-- PREUS -->
-  <div class="bg-white py-1 sm:py-1 ">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div id="preus-section" class="bg-white py-1 mt-16 pt-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div class="mx-auto max-w-4xl text-center">
         <h2 class="text-base font-semibold leading-7 text-purple-900">Preus</h2>
       </div>
-      <div class="mt-16 flex justify-center">
+      <div class="mt-16 flex justify-center ">
         <fieldset class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200">
           <legend class="sr-only">Payment frequency</legend>
           <!-- Checked: "bg-indigo-600 text-white", Not Checked: "text-gray-500" -->
@@ -126,8 +133,8 @@
           </label>
         </fieldset>
       </div>
-      <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <div class="rounded-3xl p-8 ring-1 xl:p-10 ring-gray-200">
+      <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
+        <div class="rounded-3xl p-8 ring-1 xl:p-10 ring-gray-200 mr-8">
           <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Demo</h3>
           <p class="mt-4 text-sm leading-6 text-gray-600">Una petita demostració, funcional, de com quedaria el nostre projecte. </p>
           <p class="mt-6 flex items-baseline gap-x-1">
@@ -233,6 +240,51 @@
     </div>
   </div>
 <!-- ACABA PREUS -->
+  <!-- CONTACTAM -->
+  <div class="bg-white mt-24 pb-8">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-4xl text-center">
+        <h2 class="text-base font-semibold leading-7 text-purple-900 mb-12">Contacta'm</h2>
+      </div>
+      <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+          <div>
+            <p class="mt-4 leading-7 text-gray-600">Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.</p>
+          </div>
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+            <div class="rounded-2xl bg-gray-50 p-10">
+              <h3 class="text-base font-semibold leading-7 text-gray-900">Correu</h3>
+              <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                <div>
+                  <dt class="sr-only">Email</dt>
+                  <dd><a class="font-semibold text-indigo-600" href="mailto:collaborate@example.com">collaborate@example.com</a></dd>
+                </div>
+                <div class="mt-1">
+                  <dt class="sr-only">Phone number</dt>
+                  <dd>+1 (555) 905-2345</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="rounded-2xl bg-gray-50 p-10">
+              <h3 class="text-base font-semibold leading-7 text-gray-900">Mobil</h3>
+              <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                <div>
+                  <dt class="sr-only">Email</dt>
+                  <dd><a class="font-semibold text-indigo-600" href="mailto:press@example.com">press@example.com</a></dd>
+                </div>
+                <div class="mt-1">
+                  <dt class="sr-only">Phone number</dt>
+                  <dd>+1 (555) 905-3456</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACABA CONTACTAM -->
   <!-- COMENÇA FOOTER -->
   <footer class="bg-white">
     <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
