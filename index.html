@@ -1,18 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <style>
-      html {
-        scroll-behavior: smooth;
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.5s;
-      }
-    </style>
   </head>
   <body>
   <script type="module" src="/main.js"></script> <!-- executar el main -->
@@ -36,9 +29,9 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#projectes-section" class="scroll-behavior hover:animate-pulse text-sm font-semibold leading-6 text-gray-900">Projectes</a>
-          <a href="#preus-section" class="text-sm font-semibold leading-6 text-gray-900">Preus</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contacta'm</a>
+          <a href="#projectes-section" class="hover:text-gray-300 text-sm font-semibold leading-6 text-gray-900">Projectes</a>
+          <a href="#preus-section" class="hover:text-gray-300 text-sm font-semibold leading-6 text-gray-900">Preus</a>
+          <a href="#contactam-section" class="text-sm font-semibold hover:text-gray-300 leading-6 text-gray-900">Contacta'm</a>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
@@ -79,13 +72,13 @@
       <div class="pt-32 pb-6">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-purple-900 sm:text-4xl">Desenvolupadora de videojocs</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600">Hola! soc Sara :). <br>
+            <h1 class="text-2.5xl font-bold tracking-normal text-purple-900">Desenvolupadora de videojocs</h1>
+            <p class="mt-6 text-base leading-8 text-gray-600 tracking-wide">Hola! soc Sara :). <br>
               He tingut el plaer de donar vida a mons virtuals plens d'emoció. <br>
               Vinc a presentartel's i veure si vols donar-los'hi vida amb mi.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Què he fet?</a>
+              <a href="#ultim_projecte" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Què he fet?</a>
             </div>
           </div>
         </div>
@@ -98,25 +91,91 @@
 <!-- ACABA la Hero Section -->
   <!-- PROJECTES -->
   <div id="projectes-section" class="bg-white">
-    <div class="mx-auto px-6 lg:px-40 mr-2 pt-16">
+    <div class="mx-auto px-6 lg:px-40 mr-2 pt-24">
       <div class="mx-auto max-w-4xl text-center">
-        <h1 class="text-base font-semibold text-gray-600">Projectes</h1>
+        <h1 class="text-sm font-semibold text-gray-600 tracking-wide">PROJECTES</h1>
       </div>
-      <div class="mt-16 flex justify-center mt-8">
-        <div class="flex rounded-xl bg-white/100 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl lg:p-4 gap-8 px-8 z-50">
-          <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10 ml-8">
-          <img src="https://i.pinimg.com/564x/74/22/4a/74224ae7a72bd62adc3ca59e44bca298.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10">
-          <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-10">
-          <img src="https://static.videezy.com/system/resources/thumbnails/000/051/342/original/Plexus-Space.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10 mr-8">
+      <div class="mt-16 flex justify-center mt-12">
+        <div class="flex rounded-xl bg-gray-300/10 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl pt-6 pb-8 gap-12 z-50 px-24">
+
+          <div class="flex-col gap-y-24 text-center">
+            <div class="flex-row justify-center">
+              <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            </div>
+            <div class="flex-row justify-center pt-2">
+              <a class="mt-6 text-sm leading-8 text-gray-600 tracking-wide">exemple 1</a>
+            </div>
+          </div>
+
+          <div class="flex-col gap-y-24 text-center">
+            <div class="flex-row justify-center">
+              <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            </div>
+            <div class="flex-row justify-center pt-2">
+              <a class="mt-6 text-sm leading-8 text-gray-600 tracking-wide">exemple 2</a>
+            </div>
+          </div>
+
+          <div class="flex-col gap-y-24 text-center">
+            <div class="flex-row justify-center">
+              <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            </div>
+            <div class="flex-row justify-center pt-2">
+              <a class="mt-6 text-sm leading-8 text-gray-600 tracking-wide">exemple 3</a>
+            </div>
+          </div>
+
+          <div class="flex-col gap-y-24 text-center">
+            <div class="flex-row justify-center">
+              <img src="https://i.pinimg.com/564x/55/7f/42/557f428ea94c12258d450b3499babea7.jpg" alt="App screenshot" width="248" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            </div>
+            <div class="flex-row justify-center pt-2">
+              <a class="mt-6 text-sm leading-8 text-gray-600 tracking-wide">exemple 4</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- QUE HE FET? -->
+    <div id="ultim_projecte" class=" mx-auto px-6 mr-2 pt-16">
+      <div class="mx-auto max-w-4xl text-center">
+        <h1 class="text-xs font-semibold text-gray-600 tracking-wide">ELS MEUS ÚLTIMS PROJECTES</h1>
+      </div>
+      <div class="mx-auto max-w-4xl text-center pt-12">
+        <a class="text-xs text-gray-600 tracking-wide"> Un exemple de projecte on noseque noseque etc aaaaaaaaa</a>
+      </div>
+      <div class="flex flex-row pt-6 justify-center px-8">
+        <div class="mt-5 mx-6 max-w-md px-4 flex">
+          <div class="max-w-md overflow-hidden rounded-3xl bg-white leading-6 shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+              <div class="flex rounded-lg p-4">
+                <div class="flex justify-center items-center">
+                    <img src="dist/gameMenu.png" alt="App screenshot" width="480" height="854" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div class="mt-5 mx-6 max-w-md px-4 flex">
+          <div class="max-w-md overflow-hidden rounded-3xl bg-white leading-6 shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+              <div class="flex rounded-lg p-4">
+                <div class="flex justify-center items-center">
+                    <img src="dist/gameExample.png" alt="App screenshot" width="460" height="854" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div >
 <!-- PREUS -->
-  <div id="preus-section" class="bg-white py-1 mt-16 pt-16">
+  <div id="preus-section" class="bg-white py-1 mt-16 pt-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div class="mx-auto max-w-4xl text-center">
-        <h2 class="text-base font-semibold leading-7 text-purple-900">Preus</h2>
+        <h2 class="text-sm font-semibold leading-7 text-purple-900">PREUS</h2>
       </div>
       <div class="mt-16 flex justify-center ">
         <fieldset class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200">
@@ -139,7 +198,7 @@
           <p class="mt-4 text-sm leading-6 text-gray-600">Una petita demostració, funcional, de com quedaria el nostre projecte. </p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-3xl font-bold tracking-tight text-gray-900">50€</span>
+            <span class="text-2xl font-bold tracking-tight text-gray-900">50€</span>
             <!-- Payment frequency, update based on frequency toggle state -->
           </p>
           <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600">Comprar demo</a>
@@ -160,7 +219,7 @@
               <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              es mostra el procés
+              seguiment procés
             </li>
           </ul>
         </div>
@@ -169,7 +228,7 @@
           <p class="mt-4 text-sm leading-6 text-gray-600"></p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-3xl font-bold tracking-tight text-gray-900">200€</span>
+            <span class="text-2xl font-bold tracking-tight text-gray-900">200€</span>
             <!-- Payment frequency, update based on frequency toggle state -->
           </p>
           <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600">Comprar joc</a>
@@ -212,7 +271,7 @@
           <a href="#" aria-describedby="tier-enterprise" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white">Comprar</a>
           <p class="mt-6 flex items-baseline gap-x-1 text-gray-300 py-2">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-3xl font-bold tracking-tight text-white-900">230€</span>
+            <span class="text-2xl font-bold tracking-tight text-white-900">230€</span>
             <!-- Payment frequency, update based on frequency toggle state -->
           </p>
           <ul role="list" class="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-gray-300">
@@ -241,39 +300,35 @@
   </div>
 <!-- ACABA PREUS -->
   <!-- CONTACTAM -->
-  <div class="bg-white mt-24 pb-8">
+  <div id="contactam-section" class="bg-white pt-24 mt-24 pb-8">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-4xl text-center">
-        <h2 class="text-base font-semibold leading-7 text-purple-900 mb-12">Contacta'm</h2>
+        <h2 class="text-sm font-semibold leading-7 text-purple-900 mb-12">CONTACTA'M</h2>
       </div>
       <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
         <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
           <div>
-            <p class="mt-4 leading-7 text-gray-600">Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.</p>
+            <p class="mt-4 leading-7 text-gray-600 text-xs">Per qualsevol dubte, sempre atenta.</p>
           </div>
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
             <div class="rounded-2xl bg-gray-50 p-10">
-              <h3 class="text-base font-semibold leading-7 text-gray-900">Correu</h3>
+              <h3 class="text-base font-semibold leading-7 text-gray-900">Correu electronic</h3>
               <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                 <div>
-                  <dt class="sr-only">Email</dt>
                   <dd><a class="font-semibold text-indigo-600" href="mailto:collaborate@example.com">collaborate@example.com</a></dd>
                 </div>
                 <div class="mt-1">
-                  <dt class="sr-only">Phone number</dt>
                   <dd>+1 (555) 905-2345</dd>
                 </div>
               </dl>
             </div>
             <div class="rounded-2xl bg-gray-50 p-10">
-              <h3 class="text-base font-semibold leading-7 text-gray-900">Mobil</h3>
+              <h3 class="text-base font-semibold leading-7 text-gray-900">Telèfon</h3>
               <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                 <div>
-                  <dt class="sr-only">Email</dt>
                   <dd><a class="font-semibold text-indigo-600" href="mailto:press@example.com">press@example.com</a></dd>
                 </div>
                 <div class="mt-1">
-                  <dt class="sr-only">Phone number</dt>
                   <dd>+1 (555) 905-3456</dd>
                 </div>
               </dl>
@@ -283,11 +338,12 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!-- ACABA CONTACTAM -->
   <!-- COMENÇA FOOTER -->
   <footer class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+    <div class="mx-auto max-w-7xl px-24 pt-24 pb-12 md:flex md:items-center md:justify-between lg:px-8">
       <div class="flex justify-center space-x-6 md:order-2">
         <a href="#" class="text-gray-400 hover:text-gray-500">
           <span class="sr-only">Facebook</span>
