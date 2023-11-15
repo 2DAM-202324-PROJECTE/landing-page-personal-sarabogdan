@@ -8,6 +8,7 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 preus: resolve(__dirname, 'jocs/catkin.html'),
                 about: resolve(__dirname, 'jocs/novelium.html'),
+                comprar: resolve(__dirname, 'comprar.html'),
             },
         },
     },
